@@ -1,0 +1,22 @@
+# Auris config — copy to ~/.config/auris/config.toml and edit.
+# All keys optional; shown values are the defaults.
+
+# Model used to enhance your transcript. Local: "llama3.2:1b", "qwen3.5:4b",
+# "gemma4", ... (ollama pull first). Cloud (free tier available;
+# ollama signin + ollama pull <name>-cloud): "gemma4:31b-cloud", ...
+model = "gemma4:31b-cloud"
+
+# Ollama endpoint (local daemon by default; handles cloud offload too).
+ollama_url = "http://localhost:11434"
+# Direct cloud API instead: "https://ollama.com" + OLLAMA_API_KEY env var
+# or ~/.config/auris/api_key (plain text, chmod 600). Not required for
+# local models or cloud-via-daemon.
+
+# Speech-to-text (local faster-whisper)
+stt_model = "base"          # tiny | base | small | medium
+silence_threshold = 0.01
+silence_duration = 1.2
+# max_seconds = 30          # 0/unset = unlimited
+
+# Clipboard
+# inject = true

@@ -1,0 +1,29 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local config / secrets — never commit
+.env
+*.key
+api_key
+
+# Model / audio artifacts
+*.wav
+models/*
+!models/.gitkeep
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Tooling caches
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
