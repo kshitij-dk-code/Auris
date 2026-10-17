@@ -1,0 +1,1 @@
+# Plumb - TUI for natural language code generation via Ollama
